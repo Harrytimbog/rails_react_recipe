@@ -5,7 +5,7 @@ class Api::V1::RecipesController < ApplicationController
   end
 
   def create
-    recipe = Recipe.cretate!(recipe_params)
+    recipe = Recipe.create!(recipe_params)
     if recipe
       render json: recipe
     else
